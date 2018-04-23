@@ -1,0 +1,289 @@
+/* CSS Stylesheet for Grammar Guru */
+
+* {
+    box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
+}
+
+#background-image {
+    background-image: linear-gradient(to right, rgba(5, 25, 55, 1), rgba(0, 77, 122, .8), rgba(0, 135, 147, .4), rgba(0, 191, 114, .4), rgba(168, 235, 18, 1)),
+    url('../images/mountain.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#app {   
+    border: 1px solid #ccc;
+    margin: auto;
+    width: 80%;  
+    height: 440px;
+    margin-top: 10px;  
+    background-color: #ccc;  
+    padding: 0px 20px;  
+}
+h2 {
+    font-weight: none;
+    text-align: center;
+}
+
+#site-url {
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 18px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+
+.search-box p {
+    font-size: 14px;
+    text-align: center;
+} 
+
+.prompt-user-for-library {
+    margin-top: 30px;
+}
+
+.prompt-user-for-library p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.prompt-user-for-library button {
+    width: 49%;
+    height: 40px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.prompt-user-for-library button:hover {
+    background-color: #ccc;
+}
+
+.advanced-settings-option p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons-screen button {
+    width: 49%;
+    height: 60px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.buttons-screen button:hover {
+    background-color: #ccc;
+}
+
+.advanced-settings-box p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+} 
+
+#app p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.buttons-screen-2 button {
+    width: 49%;
+    height: 60px;
+    font-size: 16px;
+    background-color: white;
+    margin-top:30px;
+}
+
+.buttons-screen-2 #submit-button {
+    background-color: green; 
+    color: white;
+}
+
+.buttons-screen-2 #submit-button:hover {
+    background-color: lightgreen; 
+    color: white;
+}
+
+.buttons-screen-2 button:hover {
+    background-color: #ccc;
+}
+
+#parameter-1,#parameter-2 {
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 18px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        text-align: center;
+        font-size: 16px;
+        color: lightgray;
+    }
+
+/* Modal-3 */
+/* Top Section */
+#url-modal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+}
+
+#url-top-table {
+    width: 50%;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+    td.title {
+        width: 40%;
+    }
+
+    td.answer {
+        width: 20%;
+    }
+
+#export-csv-button {
+    color: white;
+    background-color: turquoise;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    margin: 0px 2px;
+    border: none;
+}
+
+    #export-csv-button:hover {
+        background-color: teal;
+    }
+
+#advanced-settings-button {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+}
+
+    #advanced-settings-button:hover {
+        background-color: gray;
+    }
+
+/*Bottom Section */
+#bottom-div {
+    height: 300px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+
+
+#url-bottom-table {
+    width: 100%;
+    background-color: white;
+    font-weight: 300;
+    
+}
+
+    #url-bottom-table th {
+        text-align: left;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    #url-bottom-table tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+.scan-page {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    color: white;
+    font-size: 14px;
+}
+    .scan-page:hover {
+        background-color: green;
+    }
+
+.mark-fix {
+    height: 100%;
+    width: 100%;
+    background-color: mediumpurple;
+    color: white;
+    font-size: 14px;
+}
+
+    .mark-fix:hover {
+        background-color: purple;
+    }
+
+.report-issue {
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    color: mediumpurple;
+    font-size: 14px;
+}
+
+    .report-issue:hover {
+        background-color: darkgray;
+    }
+
+.call-out {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
