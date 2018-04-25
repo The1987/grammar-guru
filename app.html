@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grammar Guru</title>
+
+    <!-- Define a Description for Search Engines -->
+    <meta name="description" content="Free Web tutorials on HTML and CSS">
+
+    <!-- Define Meta Keywords for Search Engines -->
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- Main Element CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Library / Side Nav CSS -->
+    <link rel="stylesheet" href="assets/css/library.css">
+
+    <!-- Modal CSS -->
+    <link rel="stylesheet" href="assets/css/modal.css">
+
+    <!-- W3 Schools Modal CSS -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+</head>
+
+<body id="background-image">
+
+    <!-- Header -->
+    <header class="header-container">
+        <!-- H1 -->
+        <h1>
+            <a href="app.html">Grammar Guru</a>
+        </h1>
+
+        <!-- Navigation -->
+        <nav>
+            <ul role="navigation">
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="pricing.html">PLANS AND PRICING</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Modal-1 -->
+    <div id="main">
+        <div id="app">
+            <!-- <h2 class"subtitle">Let's Begin</h2> -->
+            <div class="search-box">
+                <input type="text" id="site-url" placeholder="Enter Your URL">
+                <p>
+                    To search your entire site, enter in Sitemap URL
+                    <br>
+                    <a href="#">What is a Sitemap URL?</a>
+                </p>
+            </div>
+            <div class="prompt-user-for-library">
+                <p>
+                    Would you like to find or exclude specific words?
+                </p>
+                <!-- If "NO" Hide Div -->
+                <button type="reset">No</button>
+
+                <!-- If "YES" Show Find Words Div -->
+                <button type="submit">Yes</button>
+            </div>
+            <div class="advanced-settings-option">
+                <p>
+                    Would you like to set your Advanced Settings?
+                    <input type="checkbox">
+                </p>
+            </div>
+            <div class="buttons-screen">
+                <button type="reset">Clear</button>
+                <button type="submit">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="app">
+        <h2 class="subtitle">Advanced Settings</h2>
+        <p>You can specify the elements on the page to search.
+            <br> To skip press 'Back' or 'Submit'.
+            <br>
+            <a href="#">Learn more</a>
+        </p>
+
+        <div class="advanced-settings-box">
+            <p>Add sample text</p>
+            <input type="text" id="parameter-1" placeholder="<div id=container>">
+            <input type="text" id="parameter-2" placeholder="<p>">
+        </div>
+
+        <div class="buttons-screen-2">
+            <button id="back-button" type="submit">Back</button>
+            <button id="submit-button" type="submit">Submit</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal-3 -->
+    <div id="app">
+        <!-- Top Section -->
+        <div id="url-modal">
+            <!-- Statistics for URL's goes -->
+            <div id="url-top-table">
+                <table>
+                    <tr>
+                        <td class="title">URL's Found</td>
+                        <td class="answer">1059</td>
+                    </tr>
+                    <tr>
+                        <td class="title">URL's with Errors</td>
+                        <td class="answer">400</td>
+                    </tr>
+                    <tr>
+                        <td class="title">URL's Fixed</td>
+                        <td class="answer">30</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Export URL's Stats and Errors -->
+            <button id="export-csv-button">Export URL's</button>
+
+            <!-- Advanced Settings -->
+            <button id="advanced-settings-button">Advanced Settings</button>
+        </div>
+
+        <!-- Bottom Section -->
+        <div id="bottom-div">
+            <table id="url-bottom-table">
+                <tr>
+                    <th>URL's</th>
+                    <th>Error Count</th>
+                    <th>Page Scanned</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="www.google.com" target="_blank">www.example.com/product-001</a>
+                    </td>
+                    <td>55</td>
+                    <td>Yes</td>
+                    <td>
+                        <button class="scan-page">Scan Page</button>
+                    </td>
+                    <td>
+                        <button class="mark-fix">Mark As Fixed</button>
+                    </td>
+                    <td>
+                        <button class="report-issue">Report Issue</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="www.google.com" target="_blank">www.example.com/product-019</a>
+                    </td>
+                    <td>55</td>
+                    <td>Yes</td>
+                    <td>
+                        <button class="scan-page">Scan Page</button>
+                    </td>
+                    <td>
+                        <button class="mark-fix">Mark As Fixed</button>
+                    </td>
+                    <td>
+                        <button class="report-issue">Report Issue</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="www.google.com" target="_blank">www.example.com/product-399</a>
+                    </td>
+                    <td>55</td>
+                    <td>Yes</td>
+                    <td>
+                        <button class="scan-page">Scan Page</button>
+                    </td>
+                    <td>
+                        <button class="mark-fix">Mark As Fixed</button>
+                    </td>
+                    <td>
+                        <button class="report-issue">Report Issue</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="www.google.com" target="_blank">www.example.com/product-001</a>
+                    </td>
+                    <td>55</td>
+                    <td>Yes</td>
+                    <td>
+                        <button class="scan-page">Scan Page</button>
+                    </td>
+                    <td>
+                        <button class="mark-fix">Mark As Fixed</button>
+                    </td>
+                    <td>
+                        <button class="report-issue">Report Issue</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="www.google.com" target="_blank">www.example.com/product-001</a>
+                    </td>
+                    <td style="color:red">!</td>
+                    <td style="color:red">No</td>
+                    <td>
+                        <button class="scan-page">Scan Page</button>
+                    </td>
+                    <td>
+                        <button class="mark-fix">Mark As Fixed</button>
+                    </td>
+                    <td>
+                        <button class="report-issue">Report Issue</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="www.google.com" target="_blank">www.example.com/product-091</a>
+                    </td>
+                    <td>7</td>
+                    <td>Yes</td>
+                    <td>
+                        <button class="scan-page">Scan Page</button>
+                    </td>
+                    <td>
+                        <button class="mark-fix">Mark As Fixed</button>
+                    </td>
+                    <td>
+                        <button class="report-issue">Report Issue</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <p class="call-out">Need help? Have a suggestion for improvement?
+            <a href="contact.html">
+                <strong>Contact Us</strong>
+            </a>
+        </p>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        Copyright 2018 &#xa9; Grammar Guru.
+        <br>
+        <a href="#">Terms and Conditions</a> |
+        <a href="#">Privacy Policy</a>
+    </footer>
+
+    <!-- Library -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2>Library</h2>
+        <p>You have entered the library.
+            <br>
+            <br> Save all words you would like the Grammar Guru to find or ignore.</p>
+        <br>
+        <div id="csv-files">
+            <!-- Allows user to download template CSV file to import large amount of words to find or ignore -->
+            <a href="#">Download CSV File</a>
+            <br>
+            <!-- This will allow a user to import their CSV file -->
+            <a href="#">Import CSV</a>
+            <!-- THis will allow a user to export all words stored in the local library -->
+            <a href="#">Export CSV</a>
+        </div>
+
+        <div class="add-words-div">
+            <!-- <button id="save-record">+</button> -->
+            <input id="add-word" type="text" placeholder="Enter words for the Guru">
+            <button id="add-button">+</button>
+        </div>
+
+        <div class="stored-library-words">
+
+            <table>
+                <tr>
+                    <th>Word</th>
+                    <th>Find</th>
+                    <th>Ignore</th>
+                    <th id="remove-all">Remove All</th>
+                </tr>
+            </table>
+
+            <!-- Added words wil be stored -->
+            <!-- <div id="greeting"></div> -->
+            <div id="greeting">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="sideNavOpen">
+        <span style="cursor:pointer;" onclick="openNav()">
+            <img style="display: inline-block; color: white;" src="assets/images/book.svg">
+        </span>
+        <!-- &#9776; -->
+        <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+    </div>
+
+
+</body>
+
+<!-- JQuery file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="assets/javascript/library.js"></script>
+
+<!-- JS file for application effects -->
+<!-- <script type="text/javascript" src="assets/javascript/effects.js"></script>
+<script type="text/javascript" src="assets/javascript/grammar.js"></script>
+<script type="text/javascript" src="assets/javascript/bundle.js"></script>
+<script type="text/javascript" src="assets/javascript/grammarCheck.js"></script> -->
+
+</html>
